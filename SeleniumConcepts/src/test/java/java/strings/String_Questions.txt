@@ -1,0 +1,13 @@
+vowels and consonants, remove all vovels
+Kth repetitive and non-repetitive
+patterns
+duplicate words and their occurrences in string
+occurrences of any character within string without using loop
+String Palindrome, anagram, one string is rotation of another
+%of uppercase and lowercase and digits and special characters
+write java program that strings are immutable in java
+find longest substring without repeating characters in given string
+swap two string variables without third or temp variable
+find all permutations of a given string
+Append text to a file in java
+write data into text file
