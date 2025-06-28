@@ -8,7 +8,7 @@ public class Largest_Element_In_Array {
 		
 	        int[] minMax = findMinMax(arr);
 	        System.out.println("Minimum: " + minMax[0]);
-	        System.out.println("Maximum: " + minMax[1]);
+	        System.out.println("Maximum1: " + minMax[1]);
 	}
 	
 	public static int[] findMinMax(int[] arr) {

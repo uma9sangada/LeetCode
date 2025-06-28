@@ -12,21 +12,21 @@ public class Sort_An_Array {
 	        // Print the sorted array
 	        System.out.println("Sorted array: " + Arrays.toString(arr1));
 	        //without inbuilt functions
-	        int[] arr= {5, 2, 8, 1, 3};
-	        int n = arr.length; 
-	        for (int i = 0; i < n-1 ; i++) {
-	            // Iterate through the unsorted part of the array
-	            for (int j = 0; j < n - i -1; j++) {
-	                // Swap elements if they are in the wrong order
-	                if (arr[j] > arr[j + 1]) {
-	                    int temp = arr[j];
-	                    arr[j] = arr[j + 1];
-	                    arr[j + 1] = temp;
-	                    }
-	            }
-	        }
+	        int[] a= {5, 2, 8, 1, 3};
+	        for(int i=0;i<a.length;i++)
+	   	 {
+	   	    for(int j=i+1;j<a.length;j++)
+	   	    {
+	   	        if(a[i]>a[j])
+	   	        {
+	   	           int temp=a[i];
+	   	           a[i]=a[j];
+	   	           a[j]=temp;
+	   	        }
+	   	    }
+	   	 }
 
-	        System.out.println("Sorted array: " + Arrays.toString(arr));
+	        System.out.println("Sorted array: " + Arrays.toString(a));
 
 	}
 	}

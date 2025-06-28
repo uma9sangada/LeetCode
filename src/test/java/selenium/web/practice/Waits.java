@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.NoSuchElementException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -28,11 +29,11 @@ public class Waits {
 		FluentWait();
 		driver.close();
 	}
-
 	public void webdriverWait() {
 		driver.findElement(By.xpath("//button[.='Add Textbox1']")).click();
 
 		new WebDriverWait(driver, Duration.ofSeconds(5)).pollingEvery(Duration.ofMillis(200))
+		.ignoring(ElementClickInterceptedException.class)
 				.ignoring(NoSuchElementException.class).until(ExpectedConditions.visibilityOfElementLocated(locator));
 
 		Assert.assertTrue(driver.findElement(locator).isDisplayed());

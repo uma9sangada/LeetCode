@@ -6,9 +6,21 @@ import java.util.Map;
 public class ResultEqualsSumOfIndices {
 
 	public static void main(String[] args) {
-        int[] a = {-10, 4, 5, 6, 20, 5};
+        int[] a1 = {-10, 4, 5, 6, 20, 5};
         int result = 10;
-        sumOfIndices(a, result);
+        sumOfIndices(a1, result);
+        
+        int[] a={1,11,3,6,2,7};
+        int sum=9;
+        
+       for (int j = 0; j < a.length; j++) {
+         for (int i = j + 1; i < a.length; i++) {
+        if (a[j] + a[i] == sum) {
+            System.out.println(a[j] + "+" + a[i] + "=" + sum);
+        }
+    }
+
+       }
     }
 
     public static void sumOfIndices(int[] arr, int result) {
@@ -28,5 +40,6 @@ public class ResultEqualsSumOfIndices {
             System.out.println("No pairs found that sum to " + result);
         }
     }
-
+    
+    
 }

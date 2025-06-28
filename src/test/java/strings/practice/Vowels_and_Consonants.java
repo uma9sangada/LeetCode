@@ -20,6 +20,8 @@ public class Vowels_and_Consonants {
 		{
 			if(vowels.contains(c))
 			{
+				
+
 				System.out.println("vowels is : "+ c);
 			}
 			else {

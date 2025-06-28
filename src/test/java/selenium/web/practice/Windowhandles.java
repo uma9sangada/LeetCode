@@ -44,6 +44,8 @@ public class Windowhandles {
 		driver.switchTo().window(driver.getWindowHandles().iterator().next());
 		driver.findElement(By.linkText("Click Here")).click();
 		System.out.println(driver.getWindowHandles().size());
+		
+		
 		List<String> windowHandles = new ArrayList<>(driver.getWindowHandles());
 		for (String handle : windowHandles) {
 			System.out.println(handle);
